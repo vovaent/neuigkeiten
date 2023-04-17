@@ -1,0 +1,12 @@
+{
+    "entry": {
+        "main": [
+            "./src/js/main.js",
+            "./src/scss/main.scss"
+        ],
+        "blocks/example/index": [
+            "./src/js/blocks/example/example.js",
+            "./src/scss/blocks/example/example.scss"
+        ]
+    }
+}
