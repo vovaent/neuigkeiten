@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "name": "acf/block-header",
+  "title": "header",
+  "description": "A custom header block.",
+  "style": "neuigkeiten-block-header-style",
+  "script": "neuigkeiten-block-header-script",
+  "category": "design",
+  "icon": "admin-comments",
+  "keywords": [
+    "header",
+    "quote"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "header.php"
+  },
+  "align": "full",
+  "supports": {
+    "align": true,
+    "anchor": true
+  },
+  "apiVersion": 2
+}
