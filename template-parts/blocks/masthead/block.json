@@ -1,19 +1,19 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
-  "name": "acf/block-header",
-  "title": "header",
-  "description": "A custom header block.",
-  "style": "neuigkeiten-block-header-style",
-  "script": "neuigkeiten-block-header-script",
+  "name": "acf/block-masthead",
+  "title": "masthead",
+  "description": "A custom masthead block.",
+  "style": "neuigkeiten-block-masthead-style",
+  "script": "neuigkeiten-block-masthead-script",
   "category": "design",
   "icon": "admin-comments",
   "keywords": [
-    "header",
+    "masthead",
     "quote"
   ],
   "acf": {
     "mode": "preview",
-    "renderTemplate": "header.php"
+    "renderTemplate": "masthead.php"
   },
   "align": "full",
   "supports": {
