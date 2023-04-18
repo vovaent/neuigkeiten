@@ -9,6 +9,8 @@
 ?>
 
 <?php wp_footer(); ?>
+</main>
+<!-- /.site-main -->
 </body>
 
 </html>
