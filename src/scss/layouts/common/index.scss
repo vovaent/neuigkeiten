@@ -1,5 +1,5 @@
 /**
  * Common Layout
  */
-@use "../header";
-@use "../footer";
+@forward "../header";
+@forward "../footer";

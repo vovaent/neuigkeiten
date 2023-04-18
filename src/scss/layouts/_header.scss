@@ -1,3 +1,42 @@
 /**
- * Header Layout
+ * Header Layout Styles
  */
+
+@use "../mixins";
+@use "../modules/nav-toggle";
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 10px 0;
+	background: transparent;
+
+	@include mixins.media-breakpoint-up(lg) {
+		align-items: center;
+		padding: 12px 0;
+	}
+
+	// .header__logo-wrapper
+
+	&__logo-wrapper {
+		width: 160px;
+		height: 48px;
+	}
+
+	// .header__top-navigation
+
+	&__top-navigation {
+		display: none;
+	}
+
+	// .header__mob-navigation
+
+	&__mob-navigation {
+		display: none;
+	}
+}
+
+.top-navigation {}
+
+.mob-navigation {}

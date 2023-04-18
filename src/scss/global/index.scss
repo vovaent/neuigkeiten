@@ -1,0 +1,11 @@
+/**
+* Global Styles
+*/
+
+@forward "./font-face";
+@forward "./typography";
+@forward "./responsive";
+
+a {
+	display: block;
+}

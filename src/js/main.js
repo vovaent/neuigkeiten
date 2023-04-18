@@ -1,3 +1,5 @@
 /**
- * Common Script File
+ * Main Script File
  */
+
+import './modules/nav-toggle';

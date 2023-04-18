@@ -1,0 +1,59 @@
+/**
+* Nav-toggle Styles
+*/
+
+@use "../variables";
+
+.nav-toggle {
+	position: relative;
+	width: 48px;
+	height: 48px;
+	padding: 13px 9px;
+	background: transparent;
+	border: 1px solid transparent;
+	margin: 7px 0;
+
+	// .nav-toggle:focus
+	:focus {
+		outline-width: 0;
+	}
+
+	[class*='bar-'] {
+		display: block;
+		// background-color: variables.$white;
+		background-color: darkcyan;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transition: .2s ease all;
+		transition: .2s ease all;
+		border-radius: 2px;
+		height: 3px;
+		margin-bottom: 4px;
+	}
+
+	// .nav-toggle__bar-bot
+	&__bar-bot {
+		margin-bottom: 0;
+	}
+
+	// .nav-toggle.opened .nav-toggle__bar-top
+	&.opened &__bar-top {
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+		-webkit-transform-origin: 15% 15%;
+		transform-origin: 15% 15%;
+	}
+
+	// .nav-toggle.opened .nav-toggle__bar-mid
+	&.opened &__bar-mid {
+		opacity: 0;
+	}
+
+	// .nav-toggle.opened .nav-toggle__bar-bot
+	&.opened &__bar-bot {
+		-webkit-transform: rotate(45deg);
+		transform: rotate(-45deg);
+		-webkit-transform-origin: 15% 95%;
+		transform-origin: 15% 95%;
+	}
+}
