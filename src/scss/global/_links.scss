@@ -1,0 +1,11 @@
+/*
+* Link Style
+*/
+
+@use "../variables/colors";
+
+a {
+	display: block;
+	color: colors.$main-text;
+	text-decoration: none;
+}
