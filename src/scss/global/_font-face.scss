@@ -1,0 +1,45 @@
+/*
+* Font-face
+*/
+
+// Spartan
+@font-face {
+	font-family: 'Spartan-Regular';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local('Spartan-Regular'),
+		url('../fonts/Spartan/Spartan-Regular.ttf.woff') format('woff'),
+		url('../fonts/Spartan/Spartan-Regular.ttf.svg#Spartan-Regular') format('svg'),
+		url('../fonts/Spartan/Spartan-Regular.ttf.eot'),
+		url('../fonts/Spartan/Spartan-Regular.ttf.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+	font-family: 'Spartan-Bold';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local('Spartan-Bold'),
+		url('../fonts/Spartan/Spartan-Bold.ttf.woff') format('woff'),
+		url('../fonts/Spartan/Spartan-Bold.ttf.svg#Spartan-Bold') format('svg'),
+		url('../fonts/Spartan/Spartan-Bold.ttf.eot'),
+		url('../fonts/Spartan/Spartan-Bold.ttf.eot?#iefix') format('embedded-opentype');
+}
+
+// Poppins
+@font-face {
+	font-family: 'Poppins Regular';
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: local('Poppins Regular'), url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Poppins Bold';
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: local('Poppins Bold'), url('../fonts/Poppins/Poppins-Bold.woff') format('woff');
+}
