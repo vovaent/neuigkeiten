@@ -28,6 +28,7 @@
     "@wordpress/scripts": "^23.7.0"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "browser-sync": "^2.29.1",
     "gsap": "^3.11.5",
     "normalize.css": "^8.0.1",
