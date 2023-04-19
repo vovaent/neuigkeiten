@@ -2,4 +2,10 @@
  * Main Script File
  */
 
-import './modules/nav-toggle';
+import mobileMenu from './modules/mobileMenu';
+import header from './layouts/header';
+
+document.addEventListener( 'DOMContentLoaded', function () {
+	mobileMenu();
+	header();
+} );
