@@ -3,3 +3,82 @@
 */
 @use "../../variables";
 @use "../../mixins";
+
+.masthead {
+	@include mixins.bg-image('../../../images/blocks/masthead/masthead-mob-bg.png', 100%, 0 -79px);
+
+	// .masthead__container
+
+	&__container {}
+
+	// .masthead__title
+
+	&__title {}
+
+	// .masthead__slider
+
+	&__slider {}
+}
+
+.container {}
+
+.main-slider {
+
+	// .main-slider__item
+
+	&__item {}
+}
+
+.main-slider-item {
+
+	// .main-slider-item__img-wrap
+
+	&__img-wrap {}
+
+	// .main-slider-item__img-mob
+
+	&__img-mob {}
+
+	// .main-slider-item__img
+
+	&__img {
+		display: none;
+
+		@include mixins.media-breakpoint-up(md) {
+			display: block;
+		}
+	}
+
+	// .main-slider-item__content-wrap
+
+	&__content-wrap {}
+}
+
+.main-slider-content-wrap {
+
+	// .main-slider-content-wrap__nav
+
+	&__nav {}
+}
+
+.main-slider-nav {
+
+	// .main-slider-nav__prev
+
+	&__prev {}
+
+	// .main-slider-nav__next
+
+	&__next {}
+}
+
+.main-slider-content {
+
+	// .main-slider-content__title
+
+	&__title {}
+
+	// .main-slider-content__description
+
+	&__description {}
+}

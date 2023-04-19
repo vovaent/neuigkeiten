@@ -1,8 +1,8 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "name": "acf/block-masthead",
-  "title": "masthead",
-  "description": "A custom masthead block.",
+  "title": "Masthead",
+  "description": "A custom Masthead block.",
   "style": "neuigkeiten-block-masthead-style",
   "script": "neuigkeiten-block-masthead-script",
   "category": "design",

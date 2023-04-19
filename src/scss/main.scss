@@ -1,6 +1,16 @@
 /**
 * Common Style
 */
+
+@use "./mixins";
 @use "./libs";
 @use "./global";
 @use "./layouts/common";
+
+.site-main {
+	margin-top: 69px;
+
+	@include mixins.media-breakpoint-up(lg) {
+		margin-top: 79px;
+	}
+}
