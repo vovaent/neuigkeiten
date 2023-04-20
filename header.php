@@ -18,46 +18,47 @@ $mob_menu_args = array(
 	'theme_location'  => 'mobile_menu_location',
 	'container'       => 'nav',
 	'container_class' => 'header__mob-navigation mob-navigation',
-	'menu_class'      => 'mob-navigation__menu mob-menu',
+	'menu_class'      => 'container mob-navigation__menu mob-menu',
 );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php wp_head(); ?>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-    <?php wp_body_open(); ?>
+	<?php wp_body_open(); ?>
 
-    <header class="header">
-        <div class="container header__container">
-            <div class="header__logo-wrapper">
+	<header class="header">
+		<div class="container header__container">
+			<div class="header__logo-wrapper">
 
-                <?php if ( has_custom_logo() ) : ?>
-                <?php the_custom_logo(); ?>
-                <?php endif ?>
+				<?php if ( has_custom_logo() ) : ?>
+					<?php the_custom_logo(); ?>
+				<?php endif ?>
 
-            </div>
-            <!-- /.header__logo-wrapper -->
+			</div>
+			<!-- /.header__logo-wrapper -->
 
-            <?php wp_nav_menu( $top_menu_args ); ?>
+			<?php wp_nav_menu( $top_menu_args ); ?>
 
-            <button class="header__toggle nav-toggle">
-                <span class="nav-toggle__bar-top"></span>
-                <span class="nav-toggle__bar-mid"></span>
-                <span class="nav-toggle__bar-bot"></span>
-            </button>
-            <!-- /.header__toggle nav-toggle -->
+			<button class="header__toggle nav-toggle">
+				<span class="nav-toggle__bar-top"></span>
+				<span class="nav-toggle__bar-mid"></span>
+				<span class="nav-toggle__bar-bot"></span>
+			</button>
+			<!-- /.header__toggle nav-toggle -->
 
-            <?php wp_nav_menu( $mob_menu_args ); ?>
+			<?php wp_nav_menu( $mob_menu_args ); ?>
 
-        </div>
-        <!-- /.header__container container -->
-    </header>
-    <!-- /.header -->
+		</div>
+		<!-- /.header__container container -->
+	</header>
+	<!-- /.header -->
 
-    <main class="site-main">
+	<main class="site-main">
+		<div class="invisible-lining"></div>

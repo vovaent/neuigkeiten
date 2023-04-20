@@ -7,10 +7,10 @@
 @use "./global";
 @use "./layouts/common";
 
-.site-main {
-	margin-top: 69px;
+.invisible-lining {
+	height: 69px;
 
 	@include mixins.media-breakpoint-up(lg) {
-		margin-top: 79px;
+		height: 79px;
 	}
 }

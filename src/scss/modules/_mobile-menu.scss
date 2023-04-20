@@ -51,9 +51,11 @@
 }
 
 .mob-navigation {
-	width: 100%;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	padding: 20px 0 20px;
 	background-color: variables.$mob-menu-bg;
 
 	@include mixins.media-breakpoint-up(lg) {
@@ -72,7 +74,7 @@
 
 	// .mob-menu .menu-item a
 	.menu-item a {
-		padding: 10px 20px;
+		padding: 10px 0;
 		color: variables.$white;
 	}
 }
