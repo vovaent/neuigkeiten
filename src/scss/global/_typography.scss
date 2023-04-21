@@ -2,11 +2,14 @@
 * Typography
 */
 
+@use "../variables" as vars;
+
 body {
 	font-family: 'Spartan', sans-serif;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 21px;
+	color: vars.$main-text;
 }
 
 h1 {
