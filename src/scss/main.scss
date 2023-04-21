@@ -8,9 +8,9 @@
 @use "./layouts/common";
 
 .invisible-lining {
-	height: 69px;
+	height: 68px;
 
 	@include mixins.media-breakpoint-up(lg) {
-		height: 79px;
+		height: 78px;
 	}
 }
