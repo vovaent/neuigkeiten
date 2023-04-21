@@ -63,7 +63,7 @@ function neuigkeiten_set_theme_properties() {
 	add_theme_support( 'automatic-feed-links' ); // required by theme-check plugin.
 	load_theme_textdomain( 'neuigkeiten', get_template_directory() . '/languages' );
 
-	add_image_size( 'neuigkeiten_medium', 320, 320 );
+	add_image_size( 'neuigkeiten_medium', 400, 400 );
 }
 
 add_action( 'after_setup_theme', 'neuigkeiten_set_theme_properties' );
