@@ -15,11 +15,11 @@
 
 <div>
 
-	<h1><?php esc_html_e( 'Blog', 'neuigkeiten' ); ?></h1>
+    <h1><?php esc_html_e( 'Blog', 'neuigkeiten' ); ?></h1>
 
-	<?php get_template_part( 'template-parts/loop' ); ?>
+    <?php get_template_part( 'template-parts/content/content' ); ?>
 
-	<p><?php echo wp_kses_post( paginate_links() ); ?></p>
+    <p><?php echo wp_kses_post( paginate_links() ); ?></p>
 
 </div>
 
