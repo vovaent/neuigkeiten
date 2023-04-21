@@ -1,8 +1,8 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "name": "acf/block-masthead",
-  "title": "Masthead",
-  "description": "A custom Masthead block.",
+  "title": "Oberer Bildschirm",
+  "description": "A custom \"Oberer Bildschirm\" block.",
   "style": "neuigkeiten-block-masthead-style",
   "script": "neuigkeiten-block-masthead-script",
   "category": "design",
