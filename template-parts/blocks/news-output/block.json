@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "name": "acf/block-news-output",
+  "title": "Nachrichtenausgabe",
+  "description": "A custom \"Nachrichtenausgabe\" block.",
+  "style": "neuigkeiten-block-news-output-style",
+  "script": "neuigkeiten-block-news-output-script",
+  "category": "design",
+  "icon": "admin-comments",
+  "keywords": [
+    "news-output",
+    "quote"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "news-output.php"
+  },
+  "align": "full",
+  "supports": {
+    "align": true,
+    "anchor": true
+  },
+  "apiVersion": 2
+}
