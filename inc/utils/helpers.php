@@ -96,16 +96,16 @@ if ( ! function_exists( 'neuigkeiten_post_thumbnail' ) ) {
 		}
 		?>
 
-		<?php if ( is_singular() && ! in_the_loop() ) : ?>
+<?php if ( is_singular() && ! in_the_loop() ) : ?>
 
-			<figure class="post-thumbnail <?php echo $figure_class; ?>">
-			<?php
+<figure class="new-thumbnail <?php echo $figure_class; ?>">
+    <?php
 				// Lazy-loading attributes should be skipped for thumbnails since they are immediately in the viewport.
 				the_post_thumbnail(
 					$thumbnail_size,
 					array_merge(
 						array(
-							'class'   => 'post-thumbnail__img',
+							'class'   => 'new-thumbnail__img',
 							'loading' => false,
 						),
 						$thumbnail_attr
@@ -113,32 +113,34 @@ if ( ! function_exists( 'neuigkeiten_post_thumbnail' ) ) {
 				);
 			?>
 
-			<?php if ( wp_get_attachment_caption( get_post_thumbnail_id() ) ) : ?>
-				<figcaption class="post-thumbnail__wp-caption-text">
-				<?php echo wp_kses_post( wp_get_attachment_caption( get_post_thumbnail_id() ) ); ?></figcaption>
-			<?php endif; ?>
-			</figure><!-- .post-thumbnail <?php echo $figure_class; ?> -->
+    <?php if ( wp_get_attachment_caption( get_post_thumbnail_id() ) ) : ?>
+    <figcaption class="new-thumbnail__wp-caption-text">
+        <?php echo wp_kses_post( wp_get_attachment_caption( get_post_thumbnail_id() ) ); ?></figcaption>
+    <?php endif; ?>
+</figure>
+<!-- .new-thumbnail <?php echo $figure_class; ?> -->
 
-		<?php else : ?>
+<?php else : ?>
 
-			<figure	figure class="post-thumbnail <?php echo $figure_class; ?>">
-				<a class="post-thumbnail__link" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-				<?php
+<figure figure class="new-thumbnail <?php echo $figure_class; ?>">
+    <a class="new-thumbnail__link" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+        <?php
 				the_post_thumbnail(
 					$thumbnail_size,
 					array_merge(
 						array(
-							'class' => 'post-thumbnail__img',
+							'class' => 'new-thumbnail__img',
 						),
 						$thumbnail_attr
 					)
 				);
-				?>
-				</a>
-			</figure><!-- .post-thumbnail -->
+					?>
+    </a>
+</figure>
+<!-- .new-thumbnail -->
 
-		<?php endif; ?>
+<?php endif; ?>
 
-		<?php
+<?php
 	}
 }

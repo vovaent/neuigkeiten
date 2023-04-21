@@ -6,6 +6,8 @@
 @use "./libs";
 @use "./global";
 @use "./layouts/common";
+@use "./modules/new";
+@use "./modules/new-thumbnail";
 
 .invisible-lining {
 	height: 68px;

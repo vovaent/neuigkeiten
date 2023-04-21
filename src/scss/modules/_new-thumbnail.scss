@@ -1,0 +1,23 @@
+@use "../mixins";
+
+.new-thumbnail {
+
+	// .new-thumbnail__link
+	&__link {
+		height: 197px;
+		border-radius: 6px;
+		overflow: hidden;
+
+		@include mixins.media-breakpoint-up(lg) {
+			height: 237px;
+
+		}
+	}
+
+	// .new-thumbnail__img
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
