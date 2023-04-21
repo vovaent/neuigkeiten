@@ -6,11 +6,11 @@
 @use "./modules/main-slider";
 
 .masthead {
-	@include mixins.bg-image('../../../images/blocks/masthead/masthead-mob-bg.png', 100% 100%, top);
+	@include mixins.bg-image('../../../images/blocks/masthead/masthead-mob-bg.png', 101% 100%, top);
 	padding: 30px 0 163px;
 
 	@include mixins.media-breakpoint-up(lg) {
-		@include mixins.bg-image('../../../images/blocks/masthead/masthead-bg.png', 100% 87%, 0 -79px);
+		@include mixins.bg-image('../../../images/blocks/masthead/masthead-bg.png', 101% 576px, 0 -79px);
 
 		padding: 67px 0 60px;
 	}

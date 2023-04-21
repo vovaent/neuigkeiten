@@ -34,7 +34,10 @@ $fields = get_fields();
 									$slide['slider_image'],
 									'neuigkeiten_medium',
 									false,
-									array( 'class' => 'glide__mob-img' )
+									array(
+										'class'   => 'glide__mob-img',
+										'loading' => false,
+									)
 								);
 								?>
 								<?php
