@@ -11,6 +11,10 @@
     "blocks/news-output/index": [
       "./src/js/blocks/news-output/news-output.js",
       "./src/scss/blocks/news-output/news-output.scss"
+    ],
+    "blocks/socials/index": [
+      "./src/js/blocks/socials/socials.js",
+      "./src/scss/blocks/socials/socials.scss"
     ]
   }
 }
