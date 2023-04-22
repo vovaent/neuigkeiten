@@ -64,6 +64,49 @@ function neuigkeiten_set_theme_properties() {
 	load_theme_textdomain( 'neuigkeiten', get_template_directory() . '/languages' );
 
 	add_image_size( 'neuigkeiten_medium', 400, 400 );
+
+	if ( function_exists( 'register_sidebar' ) ) {
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer 1', 'neuigkeiten' ),
+				'id'            => 'footer-1',
+				'before_widget' => '',
+				'after_widget'  => '',
+				'before_title'  => '<h4>',
+				'after_title'   => '</h4>',
+			)
+		);
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer 2', 'neuigkeiten' ),
+				'id'            => 'footer-2',
+				'before_widget' => '',
+				'after_widget'  => '',
+				'before_title'  => '<h4>',
+				'after_title'   => '</h4>',
+			)
+		);
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer 3', 'neuigkeiten' ),
+				'id'            => 'footer-3',
+				'before_widget' => '',
+				'after_widget'  => '',
+				'before_title'  => '<h4>',
+				'after_title'   => '</h4>',
+			)
+		);
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer 4', 'neuigkeiten' ),
+				'id'            => 'footer-4',
+				'before_widget' => '',
+				'after_widget'  => '',
+				'before_title'  => '<h4>',
+				'after_title'   => '</h4>',
+			)
+		);
+	}
 }
 
 add_action( 'after_setup_theme', 'neuigkeiten_set_theme_properties' );
