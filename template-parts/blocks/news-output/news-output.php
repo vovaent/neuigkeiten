@@ -21,17 +21,17 @@ $args = array(
 $news_query = new WP_Query( $args );
 ?>
 <section class="news-output">
-	<div class="container news-output__container">
-		<h2 class="news-output__title">
-			<?php echo $fields['title']; ?>
-		</h2>
-		<!-- /.news-output__title -->
+    <div class="container news-output__container">
+        <h2 class="news-output__title">
+            <?php echo $fields['title']; ?>
+        </h2>
+        <!-- /.news-output__title -->
 
-		<?php if ( $news_query->have_posts() ) : ?>
+        <?php if ( $news_query->have_posts() ) : ?>
 
-		<ul class="news-output__news">
+        <ul class="news-output__news">
 
-			<?php
+            <?php
 			while ( $news_query->have_posts() ) :
 				$news_query->the_post();
 
@@ -39,14 +39,14 @@ $news_query = new WP_Query( $args );
 			endwhile;
 			?>
 
-			<?php wp_reset_postdata(); ?>
+            <?php wp_reset_postdata(); ?>
 
-		</ul>
-		<!-- /.news-output__news -->
+        </ul>
+        <!-- /.news-output__news -->
 
-		<?php endif; ?>
+        <?php endif; ?>
 
-	</div>
-	<!-- /.masthead__container container -->
+    </div>
+    <!-- /.news-output__container container -->
 </section>
-<!-- /.masthead -->
+<!-- /.news-output -->

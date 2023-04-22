@@ -25,6 +25,7 @@
 
 	// .new__tag
 	&__tag {
+		margin-bottom: 10px;
 		padding: 6px 10px;
 		background-color: vars.$summer-sky;
 		border-radius: 4px;
@@ -34,9 +35,9 @@
 		line-height: 13px;
 		text-align: center;
 
-		// .new__tag:not(:first-child)
-		&:not(:first-child) {
-			margin-left: 10px;
+		// .new__tag:not(:last-child)
+		&:not(:last-child) {
+			margin-right: 10px;
 		}
 
 		// .new__tag a
