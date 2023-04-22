@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "wp-scripts start --webpack-copy-php --config webpack/webpack.config.js",
+    "rm": "rimraf ./build",
     "sync": "browser-sync start --proxy \"http://wordpress.p636290.webspaceconfig.de\" --reload-delay 200 --files=[\"**/*.css\", \"**/*.js\", \"wp-content/themes/**/*.php\"]",
-    "dev": "npm-run-all --parallel start sync",
+    "dev": "npm-run-all --parallel rm start sync",
     "prod": "wp-scripts build --webpack-copy-php --config webpack/webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
