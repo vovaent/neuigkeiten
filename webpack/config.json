@@ -1,12 +1,24 @@
 {
-    "entry": {
-        "main": [
-            "./src/js/main.js",
-            "./src/scss/main.scss"
-        ],
-        "blocks/example/index": [
-            "./src/js/blocks/example/example.js",
-            "./src/scss/blocks/example/example.scss"
-        ]
-    }
+  "entry": {
+    "main": [
+      "./src/js/main.js",
+      "./src/scss/main.scss"
+    ],
+    "blocks/masthead/index": [
+      "./src/js/blocks/masthead/masthead.js",
+      "./src/scss/blocks/masthead/masthead.scss"
+    ],
+    "blocks/news-output/index": [
+      "./src/js/blocks/news-output/news-output.js",
+      "./src/scss/blocks/news-output/news-output.scss"
+    ],
+    "blocks/socials/index": [
+      "./src/js/blocks/socials/socials.js",
+      "./src/scss/blocks/socials/socials.scss"
+    ],
+    "blocks/custom-categories-list/index": [
+      "./src/js/blocks/custom-categories-list/custom-categories-list.js",
+      "./src/scss/blocks/custom-categories-list/custom-categories-list.scss"
+    ]
+  }
 }

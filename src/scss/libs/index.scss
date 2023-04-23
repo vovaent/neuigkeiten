@@ -1,4 +1,5 @@
 /**
 * Libs
 */
-@use "./normalize";
+@forward "./reset";
+@forward "./normalize";

@@ -1,3 +1,116 @@
 /**
  * Footer Layout
  */
+
+@use "../variables" as vars;
+@use "../mixins";
+
+.footer {
+	padding: 64px 0 64px;
+	background-color: vars.$footer-bg;
+
+	// .footer__container
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		@include mixins.media-breakpoint-up(lg) {
+			flex-direction: row;
+		}
+	}
+
+	// .footer__widget
+	&__widget {
+
+		@include mixins.media-breakpoint-up(lg) {
+			margin-left: 112px;
+
+			// .footer__widget:first-child
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		// .footer__widget--footer-1
+		&--footer-1 {
+
+			@include mixins.media-breakpoint-up(lg) {
+				width: 288px;
+			}
+		}
+
+		// .footer__widget--footer-2
+		&--footer-2 {
+			margin-top: 48px;
+
+			@include mixins.media-breakpoint-up(lg) {
+				width: 220px;
+				margin-top: 0;
+			}
+		}
+
+		// .footer__widget--footer-3
+		&--footer-3 {
+			margin-top: 48px;
+
+			@include mixins.media-breakpoint-up(lg) {
+				margin-top: 0;
+			}
+		}
+
+		// .footer__widget--footer-4
+		&--footer-4 {
+			margin-top: 48px;
+
+			@include mixins.media-breakpoint-up(lg) {
+				width: 124px;
+				margin-top: 0;
+				margin-left: auto;
+			}
+		}
+
+		// .footer__widget p
+		p {
+			font-family: 'Poppins Light', sans-serif;
+			font-size: 12px;
+			line-height: 150%;
+			color: vars.$light-text;
+		}
+
+		// .footer__widget .wp-block-tag-cloud
+		.wp-block-tag-cloud {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			@include mixins.media-breakpoint-up(lg) {
+				flex-wrap: nowrap;
+				flex-direction: column;
+				justify-content: stretch;
+				column-count: unset;
+			}
+		}
+
+		// .footer__widget .tag-cloud-link
+		.tag-cloud-link {
+			margin-bottom: 15px;
+			margin-right: 0;
+			width: max-content;
+			padding: 5px 10px;
+			background-color: vars.$whiteRGB10p;
+			border-radius: 8px;
+			font-family: 'Poppins Medium', sans-serif;
+			font-size: 12px;
+			line-height: 132%;
+			letter-spacing: 0.06em;
+			text-transform: uppercase;
+			color: vars.$whiteRGB80p;
+		}
+
+	}
+
+	// .footer a
+	a {
+		color: vars.$light-text;
+	}
+}

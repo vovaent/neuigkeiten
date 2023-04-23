@@ -6,6 +6,20 @@
  *
  * @package neuigkeiten
  */
+
+// Menus
+$top_menu_args = array(
+	'theme_location'  => 'header_menu_location',
+	'container'       => 'nav',
+	'container_class' => 'header__top-navigation top-navigation',
+	'menu_class'      => 'top-navigation__menu top-menu',
+);
+$mob_menu_args = array(
+	'theme_location'  => 'mobile_menu_location',
+	'container'       => 'nav',
+	'container_class' => 'header__mob-navigation mob-navigation',
+	'menu_class'      => 'container mob-navigation__menu mob-menu',
+);
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -17,5 +31,34 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
 
-    <?php wp_body_open(); // required by theme-check plugin. ?>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo-wrapper">
+
+                <?php if ( has_custom_logo() ) : ?>
+                <?php the_custom_logo(); ?>
+                <?php endif ?>
+
+            </div>
+            <!-- /.header__logo-wrapper -->
+
+            <?php wp_nav_menu( $top_menu_args ); ?>
+
+            <button class="header__toggle nav-toggle">
+                <span class="nav-toggle__bar-top"></span>
+                <span class="nav-toggle__bar-mid"></span>
+                <span class="nav-toggle__bar-bot"></span>
+            </button>
+            <!-- /.header__toggle nav-toggle -->
+
+            <?php wp_nav_menu( $mob_menu_args ); ?>
+
+        </div>
+        <!-- /.header__container container -->
+    </header>
+    <!-- /.header -->
+
+    <main class="site-main">
+        <div class="invisible-lining"></div>

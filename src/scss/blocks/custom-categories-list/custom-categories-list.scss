@@ -1,0 +1,29 @@
+/**
+* Custom Categories List Styles
+*/
+
+@use "../../variables" as vars;
+
+.categories {
+
+	// .categories__list
+	&__list {}
+
+	// .categories__item
+	&__item {}
+}
+
+// .footer__widget .cat-item
+.cat-item {
+	font-family: 'Poppins Semibold', sans-serif;
+	font-size: 16px;
+	line-height: 132%;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: vars.$whiteRGB80p;
+
+	// .footer__widget .cat-item:not(:first-child)
+	&:not(:first-child) {
+		margin-top: 20px;
+	}
+}

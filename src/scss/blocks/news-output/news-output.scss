@@ -1,0 +1,59 @@
+/*
+* Block "News Output" Style
+*/
+
+@use "../../variables" as vars;
+@use "../../mixins";
+
+.news-output {
+	padding: 80px 0 80px;
+
+	@include mixins.media-breakpoint-up(lg) {
+		padding: 120px 0 120px;
+	}
+
+	// .news-output__container
+	// &__container {}
+
+	// .news-output__title
+	&__title {
+		font-family: 'Spartan';
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 36px;
+		color: vars.$dark-text;
+
+		@include mixins.media-breakpoint-up(lg) {
+			font-size: 50px;
+			line-height: 56px;
+		}
+	}
+
+	// .news-output__news
+	&__news {
+		display: flex;
+		flex-direction: column;
+		margin-top: 40px;
+
+		@include mixins.media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-column-gap: 24px;
+			grid-row-gap: 56px;
+		}
+	}
+
+	// .news-output__new
+	&__new {
+		margin-top: 40px;
+
+		@include mixins.media-breakpoint-up(lg) {
+			margin-top: 0;
+		}
+
+		// .news-output__new:first-child
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}

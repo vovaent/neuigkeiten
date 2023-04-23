@@ -9,7 +9,6 @@
 ?>
 <?php get_header(); ?>
 
-<?php get_template_part( 'tempalte-parts/loop', 'single' ); ?>
+<?php get_template_part( 'template-parts/content/content', 'single' ); ?>
 
-<?php
-get_footer();
+<?php get_footer();

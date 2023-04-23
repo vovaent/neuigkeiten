@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "name": "acf/block-socials",
+  "title": "Sozial",
+  "description": "A custom \"Sozial\" block.",
+  "style": "neuigkeiten-block-socials-style",
+  "script": "neuigkeiten-block-socials-script",
+  "category": "design",
+  "icon": "admin-comments",
+  "keywords": [
+    "socials",
+    "quote"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "socials.php"
+  },
+  "align": "full",
+  "supports": {
+    "align": true,
+    "anchor": true
+  },
+  "apiVersion": 2
+}

@@ -1,6 +1,18 @@
 /**
 * Common Style
 */
+
+@use "./mixins";
 @use "./libs";
-@use "./fonts";
+@use "./global";
 @use "./layouts/common";
+@use "./modules/new";
+@use "./modules/new-thumbnail";
+
+.invisible-lining {
+	height: 68px;
+
+	@include mixins.media-breakpoint-up(lg) {
+		height: 78px;
+	}
+}

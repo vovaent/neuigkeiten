@@ -1,3 +1,121 @@
 /**
- * Header Layout
+ * Header Layout Styles
  */
+
+@use "../variables";
+@use "../mixins";
+@use "../modules/mobile-menu";
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: variables.$mardi-gras;
+	z-index: 999;
+
+	@include mixins.media-breakpoint-up(lg) {
+		align-items: center;
+		padding: 12px 0;
+	}
+
+	// .header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .header__logo-wrapper
+	&__logo-wrapper {
+		width: 160px;
+		height: 48px;
+
+		@include mixins.media-breakpoint-up(lg) {
+			width: 180px;
+			height: 55px;
+		}
+	}
+
+	// .header__top-navigation
+	// &__top-navigation {}
+
+	// .header__toggle
+	&__toggle {
+		display: block;
+
+		@include mixins.media-breakpoint-up(lg) {
+			display: none;
+		}
+	}
+
+	// .header__mob-navigation
+	&__mob-navigation {
+		position: absolute;
+		top: 68px;
+		left: 0;
+		transform: translateX(-100%);
+		transition: transform .2s ease-in-out;
+
+		// .header__mob-navigation.opened
+		&.opened {
+			transform: translateX(0%);
+		}
+	}
+}
+
+.top-navigation {
+	display: none;
+
+	@include mixins.media-breakpoint-up(lg) {
+		display: flex;
+	}
+}
+
+.top-menu {
+	display: flex;
+
+	// .top-menu .menu-item
+	.menu-item {
+
+		// .top-menu .menu-item:not(:first-child)
+		&:not(:first-child) {
+			margin-left: 34px;
+		}
+
+		// .top-menu .menu-item a
+		a {
+			line-height: 17px;
+			color: variables.$light-text;
+		}
+	}
+}
+
+.menu-item {
+
+	// .menu-item a:hover, .menu-item.current-menu-item a
+	& a:hover,
+	&.current-menu-item a {
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+			-0 -1px 0 #000000,
+			0 -1px 0 #000000,
+			-0 1px 0 #000000,
+			0 1px 0 #000000,
+			-1px -0 0 #000000,
+			1px -0 0 #000000,
+			-1px 0 0 #000000,
+			1px 0 0 #000000,
+			-1px -1px 0 #000000,
+			1px -1px 0 #000000,
+			-1px 1px 0 #000000,
+			1px 1px 0 #000000,
+			-1px -1px 0 #000000,
+			1px -1px 0 #000000,
+			-1px 1px 0 #000000,
+			1px 1px 0 #000000;
+	}
+}

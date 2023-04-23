@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "name": "acf/block-masthead",
+  "title": "Oberer Bildschirm",
+  "description": "A custom \"Oberer Bildschirm\" block.",
+  "style": "neuigkeiten-block-masthead-style",
+  "script": "neuigkeiten-block-masthead-script",
+  "category": "design",
+  "icon": "admin-comments",
+  "keywords": [
+    "masthead",
+    "quote"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "masthead.php"
+  },
+  "align": "full",
+  "supports": {
+    "align": true,
+    "anchor": true
+  },
+  "apiVersion": 2
+}
