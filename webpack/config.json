@@ -15,6 +15,10 @@
     "blocks/socials/index": [
       "./src/js/blocks/socials/socials.js",
       "./src/scss/blocks/socials/socials.scss"
+    ],
+    "blocks/custom-categories-list/index": [
+      "./src/js/blocks/custom-categories-list/custom-categories-list.js",
+      "./src/scss/blocks/custom-categories-list/custom-categories-list.scss"
     ]
   }
 }

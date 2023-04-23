@@ -77,22 +77,6 @@
 			color: vars.$light-text;
 		}
 
-
-		// .footer__widget .cat-item
-		.cat-item {
-			font-family: 'Poppins Semibold', sans-serif;
-			font-size: 16px;
-			line-height: 132%;
-			letter-spacing: 0.01em;
-			text-transform: uppercase;
-			color: vars.$whiteRGB80p;
-
-			// .footer__widget .cat-item:not(:first-child)
-			&:not(:first-child) {
-				margin-top: 20px;
-			}
-		}
-
 		// .footer__widget .wp-block-tag-cloud
 		.wp-block-tag-cloud {
 			display: flex;

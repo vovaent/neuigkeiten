@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "name": "acf/block-custom-categories-list",
+  "title": "Benutzerdefinierte Listenkategorien",
+  "description": "A custom \"Benutzerdefinierte Listenkategorien\" block.",
+  "style": "neuigkeiten-block-custom-categories-list-style",
+  "script": "neuigkeiten-block-custom-categories-list-script",
+  "category": "design",
+  "icon": "admin-comments",
+  "keywords": [
+    "custom-categories-list",
+    "quote"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "custom-categories-list.php"
+  },
+  "align": "full",
+  "supports": {
+    "align": true,
+    "anchor": true
+  },
+  "apiVersion": 2
+}
