@@ -1,10 +1,10 @@
 {
     "key": "group_6443140f3d76a",
-    "title": "Socials",
+    "title": "Sozial",
     "fields": [
         {
             "key": "field_6443173d1907f",
-            "label": "Caption",
+            "label": "die Bildunterschrift",
             "name": "caption",
             "aria-label": "",
             "type": "text",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_644316d6b365c",
-            "label": "Socials",
+            "label": "Sozial",
             "name": "socials",
             "aria-label": "",
             "type": "repeater",
@@ -46,7 +46,7 @@
             "sub_fields": [
                 {
                     "key": "field_64431468b3753",
-                    "label": "Icon",
+                    "label": "die Ikone",
                     "name": "icon",
                     "aria-label": "",
                     "type": "image",
@@ -72,7 +72,7 @@
                 },
                 {
                     "key": "field_64431410487bf",
-                    "label": "Link",
+                    "label": "das Link",
                     "name": "link",
                     "aria-label": "",
                     "type": "link",
@@ -108,5 +108,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1682118499
+    "modified": 1682268428
 }
