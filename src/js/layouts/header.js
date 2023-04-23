@@ -10,16 +10,14 @@ export default () => {
 
 	const hideHeader = () => {
 		gsap.to( elHeader, {
-			pointerEvents: 'none',
-			opacity: 0,
+			y: '-100%',
 			duration: 0.3,
 		} );
 	};
 
 	const showHeader = () => {
 		gsap.to( elHeader, {
-			pointerEvents: 'auto',
-			opacity: 1,
+			y: 0,
 			duration: 0.3,
 		} );
 	};
